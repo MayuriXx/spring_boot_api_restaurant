@@ -1,6 +1,6 @@
 package com.formation.restaurant.services;
 
-import com.formation.restaurant.models.Restaurant;
+import com.formation.restaurant.data.models.Restaurant;
 
 import java.util.List;
 
