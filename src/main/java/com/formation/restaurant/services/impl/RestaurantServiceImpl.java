@@ -20,4 +20,14 @@ public class RestaurantServiceImpl implements RestaurantService {
         restaurantRepository.findAll().forEach(list::add);
         return list;
     }
+
+    @Override
+    public Restaurant findById(String id) {
+        if(restaurantRepository.findById(id).isPresent()){
+            return restaurantRepository.findById(id).get();
+        }else{
+            return null;
+        }
+
+    }
 }
